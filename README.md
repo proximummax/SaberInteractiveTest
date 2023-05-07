@@ -1,6 +1,40 @@
 # SaberInteractiveTest
+# Task 1
 
-#Task2
+ Реализуйте функции сериализации и десериализации двусвязного списка, заданного следующим образом:
+    
+    class ListNode
+    {
+ public ListNode Prev;
+        public ListNode Next;
+        public ListNode Rand; // произвольный элемент внутри списка
+        public string Data;
+    }
+
+
+    class ListRand
+    {
+        public ListNode Head;
+        public ListNode Tail;
+        public int Count;
+
+        public void Serialize(FileStream s)
+        {
+        }
+
+        public void Deserialize(FileStream s)
+        {
+        }
+    }
+
+
+
+Алгоритмическая сложность решения должна быть меньше квадратичной.
+Нельзя добавлять новые поля в исходные классы ListNode, ListRand
+Для выполнения задания можно использовать любой общеиспользуемый язык.
+Тест нужно выполнить без использования библиотек/стандартных средств сериализации.
+
+# Task2
 
 Напишите ИИ для противника используя BhvTree (достаточно нарисовать схему, реализация в каком-либо из движков не требуется).
 Солдат - сущность, которая может стрелять, отправиться в указанную точку и ждать.
