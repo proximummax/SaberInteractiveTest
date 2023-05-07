@@ -112,6 +112,9 @@ static bool IsIdentical(ListNode* a, ListNode* b)
 		if (a->Next != nullptr && b->Next != nullptr && a->Next->Data != b->Next->Data)
 			return false;
 
+		if (a->Rand != nullptr && b->Rand != nullptr && a->Rand->Data != b->Rand->Data)
+			return false;
+
 		a = a->Next;
 		b = b->Next;
 

@@ -110,9 +110,15 @@ namespace LinkedListTest
 			ListNode* node1 = new ListNode();
 			node1->Data = "node1";
 
-			ListRand* list = new ListRand();
-			list->Count = 1;
+			ListNode* node2 = new ListNode();
+			node2->Data = "node2";
+			node2->Prev = node1;
+			node2->Rand = node2;
 
+			ListRand* list = new ListRand();
+			list->Count = 2;
+			list->Head = node1;
+			list->Tail = node2;
 
 			ofstream outfile("list.txt");
 			list->Serialize(outfile);
@@ -121,7 +127,7 @@ namespace LinkedListTest
 			ListRand* newList = new ListRand();
 			newList->Deserialize(infile);
 
-			Assert::AreEqual(false, IsIdentical(newList->Head, list->Head));
+			Assert::AreEqual(true, IsIdentical(newList->Head, list->Head));
 		}
 		TEST_METHOD(CompareAfterDeserialize_2)
 		{
