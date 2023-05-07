@@ -45,7 +45,7 @@
 
 
 # Начало стрельбы независимо от того, прибыл солдат на точку или нет
-![image](https://user-images.githubusercontent.com/82521949/236665365-e9946714-12a8-4c69-bd48-681df88c748b.png)
+![image](https://user-images.githubusercontent.com/82521949/236665526-0edec4a9-15b2-470f-9d7a-d8c1024cc53a.png)
 
 
 
