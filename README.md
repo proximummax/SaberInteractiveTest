@@ -44,5 +44,5 @@
 Если враг обнаружен, солдат стреляет в него с паузой в 1 секунду между каждым выстрелом
 
 
-![image](https://user-images.githubusercontent.com/82521949/236665526-0edec4a9-15b2-470f-9d7a-d8c1024cc53a.png)
+![image](https://user-images.githubusercontent.com/82521949/236666111-e1179559-9131-4fe8-9c6c-91a96c6e2d29.png)
 
