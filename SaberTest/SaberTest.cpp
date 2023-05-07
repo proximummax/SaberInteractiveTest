@@ -122,37 +122,6 @@ static bool IsIdentical(ListNode* a, ListNode* b)
 
 int main()
 {
-	ListNode* node1 = new ListNode();
-	node1->Data = "node1";
-
-	ListNode* node2 = new ListNode();
-	node2->Data = "node2";
-	node2->Prev = node1;
-
-	ListNode* node3 = new ListNode();
-	node3->Data = "node3";
-	node3->Prev = node2;
-	node3->Rand = node1;
-
-	node1->Rand = node3;
-	node1->Next = node2;
-
-	node2->Next = node3;
-
-	ListRand* list = new ListRand();
-	list->Count = 3;
-	list->Head = node1;
-	list->Tail = node3;
-
-	ofstream outfile("list.txt");
-	list->Serialize(outfile);
-
-	ifstream infile("list.txt");
-	ListRand* newList = new ListRand();
-	newList->Deserialize(infile);
-
-	cout << IsIdentical(newList->Head, list->Head);
-
 	return 0;
 }
 
